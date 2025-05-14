@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +13,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrimCutSlider" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvC-aS-FDM" userLabel="Video Section">
-                                <rect key="frame" x="30" y="727" width="333" height="91"/>
+                                <rect key="frame" x="30" y="765.33333333333337" width="354" height="96.666666666666629"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1JY-Ju-bMB" userLabel="videoView">
-                                        <rect key="frame" x="0.0" y="41" width="333" height="50"/>
+                                        <rect key="frame" x="0.0" y="46.666666666666629" width="354" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ES7-Xx-JuX" userLabel="Left Noob View">
                                                 <rect key="frame" x="0.0" y="0.0" width="24" height="50"/>
@@ -42,7 +42,7 @@
                                                 </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1C-lW-Ttf" userLabel="Right Noob View">
-                                                <rect key="frame" x="309" y="0.0" width="24" height="50"/>
+                                                <rect key="frame" x="330" y="0.0" width="24" height="50"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toLeftArrow" translatesAutoresizingMaskIntoConstraints="NO" id="n77-NA-oQI">
                                                         <rect key="frame" x="8.6666666666666856" y="15.666666666666629" width="7" height="19"/>
@@ -85,7 +85,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fvC-aS-FDM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="1KY-2D-gwb"/>
-                            <constraint firstItem="fvC-aS-FDM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.847328" id="Qdu-9j-1NZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fvC-aS-FDM" secondAttribute="trailing" constant="30" id="q1i-5m-ka2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fvC-aS-FDM" secondAttribute="bottom" id="wnO-GQ-N6J"/>
                         </constraints>
