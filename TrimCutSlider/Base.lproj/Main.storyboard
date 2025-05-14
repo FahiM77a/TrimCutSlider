@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrimCutSlider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvC-aS-FDM" userLabel="Video Section">
+                                <rect key="frame" x="30" y="727" width="333" height="91"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1JY-Ju-bMB" userLabel="videoView">
+                                        <rect key="frame" x="0.0" y="41" width="333" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ES7-Xx-JuX" userLabel="Left Noob View">
+                                                <rect key="frame" x="0.0" y="0.0" width="24" height="50"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toRightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="nEh-Za-KRh">
+                                                        <rect key="frame" x="8.6666666666666643" y="15.666666666666629" width="7" height="19"/>
+                                                        <gestureRecognizers/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="24" id="LH4-od-YUL"/>
+                                                    <constraint firstItem="nEh-Za-KRh" firstAttribute="centerX" secondItem="ES7-Xx-JuX" secondAttribute="centerX" id="NhN-Cu-4PV"/>
+                                                    <constraint firstItem="nEh-Za-KRh" firstAttribute="centerY" secondItem="ES7-Xx-JuX" secondAttribute="centerY" id="e7f-xc-GqW"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="ita-oP-OHo" appends="YES" id="Xkj-FD-ht4"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1C-lW-Ttf" userLabel="Right Noob View">
+                                                <rect key="frame" x="309" y="0.0" width="24" height="50"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toLeftArrow" translatesAutoresizingMaskIntoConstraints="NO" id="n77-NA-oQI">
+                                                        <rect key="frame" x="8.6666666666666856" y="15.666666666666629" width="7" height="19"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstItem="n77-NA-oQI" firstAttribute="centerX" secondItem="e1C-lW-Ttf" secondAttribute="centerX" id="40d-td-YyM"/>
+                                                    <constraint firstItem="n77-NA-oQI" firstAttribute="centerY" secondItem="e1C-lW-Ttf" secondAttribute="centerY" id="bab-pS-baS"/>
+                                                    <constraint firstAttribute="width" constant="24" id="vtn-Pk-YEn"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="mhv-MP-Mg8" appends="YES" id="CV1-Dq-Trd"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ES7-Xx-JuX" secondAttribute="bottom" id="5if-dH-Eh5"/>
+                                            <constraint firstItem="e1C-lW-Ttf" firstAttribute="top" secondItem="1JY-Ju-bMB" secondAttribute="top" id="8zD-se-HWA"/>
+                                            <constraint firstAttribute="height" constant="50" id="G1q-nV-53c"/>
+                                            <constraint firstItem="ES7-Xx-JuX" firstAttribute="top" secondItem="1JY-Ju-bMB" secondAttribute="top" id="KVF-kx-qBJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="e1C-lW-Ttf" secondAttribute="bottom" id="kob-z6-VwP"/>
+                                            <constraint firstAttribute="trailing" secondItem="e1C-lW-Ttf" secondAttribute="trailing" id="mAW-59-C1q"/>
+                                            <constraint firstItem="ES7-Xx-JuX" firstAttribute="leading" secondItem="1JY-Ju-bMB" secondAttribute="leading" id="tix-Dq-XOE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1JY-Ju-bMB" secondAttribute="trailing" id="SqN-ke-dlw"/>
+                                    <constraint firstAttribute="bottom" secondItem="1JY-Ju-bMB" secondAttribute="bottom" id="b2k-sS-orn"/>
+                                    <constraint firstAttribute="width" secondItem="fvC-aS-FDM" secondAttribute="height" multiplier="333:91" id="cFv-0H-cpz"/>
+                                    <constraint firstItem="1JY-Ju-bMB" firstAttribute="leading" secondItem="fvC-aS-FDM" secondAttribute="leading" id="z1K-Fw-pNz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fvC-aS-FDM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="1KY-2D-gwb"/>
+                            <constraint firstItem="fvC-aS-FDM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.847328" id="Qdu-9j-1NZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fvC-aS-FDM" secondAttribute="trailing" constant="30" id="q1i-5m-ka2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fvC-aS-FDM" secondAttribute="bottom" id="wnO-GQ-N6J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="LeftNoobView" destination="ES7-Xx-JuX" id="fJk-mO-4nR"/>
+                        <outlet property="RightNoobView" destination="e1C-lW-Ttf" id="EOh-VZ-nv8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ita-oP-OHo">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="00u-cX-82V"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="mhv-MP-Mg8">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="oKQ-VI-C1j"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="0.76335877862595414" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="toLeftArrow" width="7" height="19"/>
+        <image name="toRightArrow" width="7" height="19"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
